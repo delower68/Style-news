@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Stylist News</title>
+    <style>
+      .thumbnail-img{
+        border-radius: 50%;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <header>
+      <section>
+      <!-- navber here  -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand fw-bold" href="#">Stylist News</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+            <form class="d-flex ">
+              <a onclick="loadHomeNews()" class="text-decoration-none text-success  me-4" type="submit">Home</a>
+              <a id="blog-post" href="#" class=" text-decoration-none text-success me-4" type="submit">Blog</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+      </section>
+
+    </header>
+    <main>
+      <!-- display all categories of post  -->
+        <section>
+          <div class="py-3" >
+            <ul id="all-menu" class="d-lg-flex d-sm-block align-item-center justify-content-center  list-unstyled  ">
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section class="text-center" ><span  id="category_count_container"></span> </section>
+        <!-- spinner here  -->
+        <section >
+          
+          <button id="spinner" class="btn btn-primary d-none "  type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Wait Baby...
+          </button>
+        </section>
+
+        <!-- blog queston  -->
+        <section id="question-show"></section>
+
+        <!-- show category here  -->
+        <section id="cat-details">
+          <div class="row row-cols-1 row-cols-md-2 g-4 ">
+            
+          </div>
+
+        </section>
+
+
+        <section class="modal-show">
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-tittle">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+    </main>
+    
+     
+
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/recapApp.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
